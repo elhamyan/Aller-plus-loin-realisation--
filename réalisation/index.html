@@ -1,0 +1,43 @@
+
+
+  <!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catalogue — Parfums</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Catalogue — Parfums</h1>
+        <div class="meta">Rafraîchir pour charger les parfums depuis DummyJSON</div>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Recherche (nom, description)...">
+        <select id="brandFilter">
+          <option value="">Toutes les marques</option>
+        </select>
+        <button id="resetBtn">Rafraîchir</button>
+      </div>
+    </header>
+
+    <div id="catalogue" aria-live="polite"></div>
+    <div id="empty" class="empty" hidden>Aucun parfum trouvé.</div>
+
+    <footer>
+      Exemples basés sur <a href="https://dummyjson.com" target="_blank" rel="noreferrer">DummyJSON</a> — images et prix fictifs.
+    </footer>
+  </div>
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
